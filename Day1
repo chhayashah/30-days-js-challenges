@@ -1,0 +1,44 @@
+// activity 1: variable declaration
+
+// task1
+
+var a = 4;
+console.log(a);
+
+// task2
+let s = "chhaya";
+console.log(s);
+
+// activity 2: constant declaration
+// task3
+const c = true;
+console.log(c);
+
+// activity 3: Data types
+// task4
+
+var b = 7;
+console.log(typeof(b));
+
+var str = "manish";
+console.log(typeof(str));
+
+console.log(typeof(c));
+
+var arr = [1, 2];
+console.log(typeof(arr));
+
+// activity 4: Reassigning Variables
+// task 5
+
+let chh = 34;
+console.log(chh);
+chh = 23;
+console.log(chh);
+
+// activity 5:understanding const
+// task 6
+const m = 2;
+console.log(m);
+// m = 2;
+// console.log(m);
