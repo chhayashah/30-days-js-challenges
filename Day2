@@ -1,0 +1,66 @@
+// activity1: Arithmetic operations
+
+// task1
+let a = 4;
+let b = 5;
+console.log(a + b);
+
+// task2
+console.log(a - b);
+
+// task3
+console.log(a * b);
+
+// task4
+console.log(a / b);
+
+// task5
+console.log(a % b);
+
+// acticvity2: Assignment Operators
+// task6
+a += 5;
+console.log(a);
+
+
+// task7
+a -= 3;
+console.log(a);
+
+// activity3:Comparison Operators
+
+// task8
+console.log(a > b);
+console.log(a < b);
+
+// task9
+console.log(a >= b);
+console.log(a <= b);
+
+// task10
+let c = '3';
+let d = 3;
+console.log(c == d);
+console.log(c === d);
+
+// activity 4: logical operators
+
+// task11
+let aa = true;
+let bb = false;
+console.log(aa && bb);
+
+// task12
+console.log(aa || bb);
+
+// task13
+console.log(!bb);
+
+// activity 5: Ternary Operator
+let number = 5;
+
+let result = (number > 0) ? "Positive" :
+             (number < 0) ? "Negative" :
+             "Zero";
+
+console.log(`The number is ${result}.`);
