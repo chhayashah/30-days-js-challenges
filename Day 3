@@ -1,0 +1,112 @@
+// activity 1: if-else statements
+
+// task1
+
+let a = -5;
+if (a > 0) {
+    console.log("a is postive");
+}
+else if (a < 0) {
+    console.log("a is neagtive");
+} else {
+    console.log("a is zero");
+}
+
+// task 2
+let age = 17;
+if (age >= 18) {
+    console.log("you are eligible for vote");
+}
+else {
+    console.log("your are not eligible for vote");
+}
+
+// activity 2:Nested if-else statements
+// task 3
+let aa = 8;
+let bb = 9;
+let cc = 7;
+
+if (aa >= bb && aa >= cc) {
+    console.log("aa is greater" + aa);
+} else if (bb >= aa && bb >= cc) {
+    console.log("bb is greater " + bb);
+} else {
+    console.log("cc is greater " + cc);
+}
+
+// activity 3: switch case
+// task 4
+let day = 4;
+switch (day) {
+    case 1:
+        console.log("sunday");
+        break;
+    case 2:
+        console.log("monday");
+        break;
+    case 3:
+        console.log("tuesday");
+        break;
+    case 4:
+        console.log("wednesday");
+        break;
+    case 5:
+        console.log("thruesday");
+        break;
+    case 6:
+        console.log("friday");
+        break;
+    case 7:
+        console.log("saturady");
+        break;
+    default:
+        console.log("default");
+      
+
+}
+
+// task5
+let scrore = 89;
+
+let grade;
+
+switch (true) {
+    case (scrore >= 90 && scrore <= 100):
+        grade = "A";
+        break;
+    case (scrore >= 80 && scrore < 90):
+        grade = "B";
+        break;
+    case (scrore >= 70 && scrore <80):
+        grade = "C";
+        break;
+    case (scrore >= 60 && scrore < 70):
+        grade = "D";
+        break;
+    case (scrore >= 0 && scrore < 60):
+        grade = "E";
+        break;
+    
+    default:
+        grade = "Invalid score";
+}
+console.log("Score: " + scrore + ", Grade: " + grade);
+  
+// activity 4:Conditional(ternary) operator
+// task6
+
+let number = 6;
+let result = (number % 2 == 0) ? "even" : "odd";
+console.log(result);
+
+// combining conditions
+
+// task7
+
+let year = 2020;
+if ((year % 4 == 0 && year % 100 !== 0) || (year % 400 === 0)) {
+          console.log(year + " is a leap year.");
+    } else {
+        console.log(year + " is not a leap year.");
+    }
