@@ -1,0 +1,97 @@
+// // ativities 1: for loop
+
+// // task 1
+// for (let i = 1; i <= 10; i++){
+//     console.log(i);
+// }
+
+// // task 2
+// let a = 5;
+// for (let j = 1; j <= 10; j++){
+//     console.log(a*j);
+// }
+
+// // const number = 5;
+
+// // console.log(`Multiplication table of ${number}:`);
+// // for (let j = 1; j <= 10; j++) {
+// //     console.log(`${number} * ${j} = ${number * j}`);
+// // }
+
+// // activity 2:while loop
+// // task 3
+
+// let n = 1;
+// let sum = 0;
+// while (n <= 10) {
+//     // console.log(n);
+//     sum=sum + n;
+//     n++;
+
+// }
+
+// console.log(`The total sum of numbers from 1 to 10 is: ${sum}`);
+
+// // task 4
+// let b = 10;
+// while (b >= 1) {
+//     console.log(b);
+//     b--;
+// }
+
+// // activity 3 : Do while loop
+
+// // task 5
+
+// let c = 1;
+// do {
+//     console.log(c);
+//     c++;
+// } while (c <= 5);
+
+// // task 6
+
+// let fact = 5;
+// let result = 1;
+// let m = fact;
+// do {
+//     result = result * m;
+
+//     m--;
+// } while (m > 0);
+
+// console.log(`Factorial of ${fact} is ${result}`);
+
+
+// // activity 4:Nested Loops
+
+
+// let rows = 5;
+// for (let e = 1; e <= rows; e++){
+//     let stars = '';
+//     for (let f = 1; f <= e; f++){
+//         stars += '*';
+       
+//     }
+
+//     console.log(stars);
+// }
+
+
+// activity 5:loop control statements
+// task 8
+
+for (let a = 1; a <= 10; a++){
+    if (a == 5) {
+        continue;
+    }
+    console.log(a);
+}
+
+// task 9
+for (let b = 1; b <= 10; b++){
+    if (b == 7) {
+        break;
+    }
+    console.log(b);
+}
