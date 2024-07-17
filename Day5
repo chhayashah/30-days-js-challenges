@@ -1,0 +1,110 @@
+// activity 1:function declaration
+
+// task1
+
+function CheckNo(n) {
+    if (n % 2 == 0) {
+        console.log("even");
+    } else {
+        console.log("odd");
+    }
+}
+CheckNo(5)
+
+// task 2
+
+function square(a) {
+    return a * a;
+}
+let result = square(4);
+console.log(result);
+
+// activity 2:Function Expression
+// task 3
+const findMax = function (a, b) {
+    return (a > b) ? a : b;
+};
+const n1 = 10;
+const n2 = 20;
+
+const max = findMax(n1, n2);
+console.log(max);
+
+// task4
+const concatenateString = function (str1, str2) {
+    return str1 + str2;
+};
+const s1 = "chhaya ";
+const s2 = "shah";
+
+const res = concatenateString(s1, s2);
+console.log(res);
+
+// activity 3:Arrow functions
+// task5
+const calculate = (a,b) => {
+    return a + b;
+}
+const sum = calculate(12, 2);
+console.log(sum);
+
+
+// task 6
+const containsCharacter = (str, char) => str.includes(char);
+
+const string1 = "Hello, world!";
+const character = "o";
+
+const result1 = containsCharacter(string1, character);
+console.log(`Does "${string1}" contain "${character}"? ${result1}`); // Outputs: Does "Hello, world!" contain "o"? true
+
+// activity 4:function parameters and default values
+
+// task7
+const product = (e, d = 1) => {
+    return e * d;
+}
+const r1 = product(3, 10);
+console.log(r1);
+
+const r2 = product(3);
+console.log(r2);
+
+// task8
+
+const person = (name, age = 12) => {
+    return `${name} ${age}`;
+}
+const re1 = person("chhaya", 14);
+console.log(re1);
+
+
+// activity 5:Higher order function
+
+// task9
+const repeatFunction = (func, times) => {
+    for (let i = 0; i < times; i++) {
+        func();
+    }
+};
+const sayHello = () => {
+    console.log("Hello!");
+};
+
+repeatFunction(sayHello, 5);
+
+// task 10
+
+const applyFunctions = (func1, func2, value) => {
+    const result1 = func1(value);
+    return func2(result1);
+};
+
+// Example functions
+const addTen = (num) => num + 10;
+const multiplyByTwo = (num) => num * 2;
+
+// Using the higher-order function
+const initialValue = 5;
+const finalResult = applyFunctions(addTen, multiplyByTwo, initialValue);
+console.log(finalResult); // Outputs: 30
