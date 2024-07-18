@@ -1,0 +1,83 @@
+// // activity 1: array creation and access
+
+// // task1
+// let numbers=[];
+
+// for(let i=1;i<=5;i++){
+//     numbers.push(i);
+// }
+// console.log(numbers);
+
+
+// // taask2
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr[0]);
+// console.log(arr.length - 1);
+
+
+// // activity2:array methods
+
+// // task3
+
+// const array = [];
+// array.push(1);
+// array.push(2);
+// array.push(3);
+// array.push(4);
+// array.push(5);
+// console.log(array);
+
+// // task4
+// array.pop();
+// console.log(array);
+
+// // task5
+// console.log(array.shift());
+// console.log(array);
+
+// // task6
+// console.log(array.unshift(2));
+// console.log(array);
+
+// activity3:Array methods
+// task7
+
+const num = [1, 2, 3, 4, 5, 6];
+const doublenumber = num.map(number => number * 2);
+console.log(doublenumber);
+
+// task8
+const num1 = [1, 2, 3, 4, 5, 6, 7];
+const even = num1.filter(number => number % 2 == 0);
+console.log(even);
+
+// task9
+const sum = num1.reduce((acc, curr) => acc + curr, 0);
+console.log(sum);
+
+//activity4:Array Iteration
+// task10
+for (let i = 0; i < num1.length; i++){
+    console.log(num1[i]);
+}
+
+// task11
+num.forEach(number => {
+    console.log(number);
+});
+
+//acticity5: multi-dimensional-array
+// task12
+const twoDimensional = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log(twoDimensional);
+
+// task13
+console.log(twoDimensional[0][0]);
+console.log(twoDimensional[0][1]);
+console.log(twoDimensional[0][2]);
+console.log(twoDimensional[1][0]);
+console.log(twoDimensional[1][1]);
+console.log(twoDimensional[1][2]);
+console.log(twoDimensional[2][0]);
+console.log(twoDimensional[2][1]);
+console.log(twoDimensional[2][2]);
