@@ -1,0 +1,108 @@
+// activity1:object creation and access
+// task1
+
+// let book = {
+//     title: "helen keller",
+//     author: "jenny",
+//     year:123
+// };
+// console.log(book);
+
+// task2
+
+// console.log(book.title);
+// console.log(book.author);
+
+
+// activity 2:object methods
+// task3
+
+// const book = {
+//     title: "the heaven",
+//     author: "scott",
+    
+//     getDetails: function () {
+//         return `${this.author} by ${this.title}`;
+//     }
+// };
+// console.log(book.getDetails());
+
+
+// task4
+
+// const book = {
+//     title: "the heaven",
+//     author: "scott",
+//     year:123,
+    
+//     getDetails: function () {
+//         return `${this.author} by ${this.title}`;
+//     },
+
+//     updateYear: function (newYear) {
+//         this.year = newYear;
+//     }
+// };
+// book.updateYear(2024);
+// console.log(book);
+
+
+// activity 3:nested objects
+// task5
+let libraray = {
+    name: "chhaya",
+    books:[
+        {
+            title: "the heaven",
+            author: "scott",
+            year: 123,
+        },
+        {
+            title: "the heaven",
+            author: "scott",
+            year: 1230,
+        },
+        {
+            title: "the ",
+            author: "scotet",
+            year: 1233,
+        }
+    ]
+};
+console.log(libraray);
+
+// task6
+console.log(libraray.name);
+libraray.books.forEach(book => {
+    console.log(book.title);
+});
+
+
+// activity 4:the this keyword
+// task7
+libraray.books.forEach(book => {
+    book.getTitleAndYear = function () {
+        return `${this.title} (${this.year})`;
+    };
+});
+
+libraray.books.forEach(book => {
+    console.log(book.getTitleAndYear());
+})
+
+
+// activity 5:object iteration
+// task8
+console.log("forin")
+libraray.books.forEach(book => {
+    for (let property in book) {
+        console.log(`${property}:${book[property]}`);
+    }
+});
+
+// task 9
+console.log("task9")
+libraray.books.forEach(book => {
+    console.log(Object.keys(book));
+    console.log(Object.values(book));
+});
