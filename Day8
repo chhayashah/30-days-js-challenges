@@ -1,0 +1,78 @@
+// activity 1:template literals
+
+// task1
+let name = "chhaya";
+let age = 21;
+console.log(`${name} ${age}`);
+
+// task2
+const multiLineString = `
+This is a multi-line string.
+You can write text on multiple lines,
+and it will be preserved as is.
+This makes it easy to format your strings.
+`;
+
+console.log(multiLineString);    
+
+// actvity 2: destructuring
+// task3
+
+const number = [1, 2, 3, 4, 5];
+const [first, second] = number;
+console.log(first, second);
+
+// task4
+const book = {
+    title: "js",
+    author: "douglas",
+    year: 1234
+};
+const{title, author} = book;
+console.log(title, author);
+
+
+// activity 3:spread andrest operators
+// task5
+const originalArray = [1, 2, 3];
+const newArray = [...originalArray, 4, 5, 6];
+console.log(newArray);
+
+// task6
+const sum = (...numbers) => {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+};
+console.log(sum(1, 2, 3, 4, 5, 6));
+
+
+// activity4:default parameters
+// task7
+const multiply = (a, b = 1) => a * b;
+console.log(multiply(5));
+console.log(multiply(5, 2));
+
+
+// activity 5:Enhanced object literals
+// task8
+const nam = "book";
+const price = 30;
+
+const product = {
+    nam,
+    price,
+    display() {
+        console.log(`${this.nam} costs $${this.price}`);
+    }
+};
+console.log(product);
+product.display();
+
+
+// task9
+const propname = "dynamicprops";
+const value = "this is a dynamic property";
+
+const dynamicObject = {
+    [propname]: value
+};
+console.log(dynamicObject);
