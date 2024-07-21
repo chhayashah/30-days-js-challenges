@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="myclass" id="para">original text</div>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <div id="removeMe">Remove this element</div>
+
+    <div id="myDiv" class="originalClass">Some content</div>
+
+    <button id="myButton">Click me</button>
+    <p id="myParagraph">Original Text</p>
+
+    <div id="hoverDiv" style="width:100px; height:100px; background-color:lightgray;">Hover over me</div>
+
+
+
+
+    <!-- script -->
+     <script>
+        document.getElementById("para").textContent="new text";
+        document.querySelector(".myclass").style.backgroundColor="yellow";
+
+
+        const newDiv=document.createElement("div");
+        newDiv.textContent="this is a div";
+        document.body.appendChild(newDiv);
+
+        const newListItem = document.createElement("li");
+            newListItem.textContent = "Item 3";
+            document.getElementById("myList").appendChild(newListItem);
+
+            const elementToRemove = document.getElementById("removeMe");
+                elementToRemove.parentNode.removeChild(elementToRemove);
+
+                const list = document.getElementById("myList");
+                    list.removeChild(list.lastElementChild);
+
+            const div = document.getElementById("myDiv");
+                div.classList.add("newClass");
+                div.classList.remove("originalClass");
+
+            document.getElementById("myButton").addEventListener("click", function () {
+                    document.getElementById("myParagraph").textContent = "Text changed!";
+                });
+
+            document.getElementById("hoverDiv").addEventListener("mouseover", function () {
+                    this.style.borderColor = "red";
+                    this.style.borderWidth = "2px";
+                    this.style.borderStyle = "solid";
+                });
+     </script>
+</body>
+</html>
